@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap');
+
+* {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+body {
+    margin: 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.header img {
+    width: 40px;
+    height: 40px;
+}
+
+.header button {
+    border: none;
+    width: 150px;
+    height: 48px;
+    text-transform: uppercase;
+    color: #162542;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 8px;
+    margin-left: auto;
+}
+
+.hero-div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.hero-div #text-div {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 80px;
+    max-width: 339px;
+}
+
+.hero-div #text-div h2 {
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 900;
+    color: #162542;
+}
+.hero-div #text-div p {
+    color: #7b8bad;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+}
+.hero-div #button-div {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero-div #button-div button {
+    width: 150px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f16718;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.hero-div #button-div a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #7b8bad;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.hero-div .img-div {
+    height: 380px;
+}
+.hero-div img {
+    position: absolute;
+    right: -100px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    width: 400px;
+}
+
+.keyboard-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.keyboard-div .images {
+    display: flex;
+    height: 180px;
+}
+.keyboard-div .images img {
+    object-fit: cover;
+}
+.keyboard-div .images #first {
+    position: relative;
+    left: -40px;
+}
+.keyboard-div .images #first img {
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    height: 100%;
+}
+.keyboard-div .images #first #orange-color {
+    position: absolute;
+    background-color: #f16718;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+.keyboard-div .images #second {
+    border-radius: 16px;
+    width: 250px;
+    /* object-fit: cover; */
+}
+
+.keyboard-div #text {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.keyboard-div #text h2 {
+    color: #162542;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.keyboard-div #text p {
+    color: #7b8bad;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    margin-top: 111px;
+    gap: 64px;
+    grid-template-columns: 1fr;
+}
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+.cards .card img {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 24px;
+}
+.cards .card h3 {
+    text-transform: uppercase;
+    color: #162542;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+}
+
+.cards .card p {
+    color: #7b8bad;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.footer {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.footer p {
+    color: #7b8bad;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.footer span {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .header {
+        justify-content: space-between;
+    }
+    .header button {
+        margin-left: auto;
+    }
+    .hero-div {
+        flex-direction: row;
+    }
+    .hero-div .img-div img {
+        position: absolute;
+        height: 350px;
+        top: -25px;
+        right: -100px;
+        /* right: 0; */
+    }
+
+    .keyboard-div #text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    .keyboard-div .images {
+        justify-content: center;
+        height: 220px;
+    }
+
+    .keyboard-div .images img {
+        border-radius: 13px;
+        object-fit: cover;
+        height: auto;
+    }
+    .keyboard-div .images #first {
+        width: 20%;
+    }
+    .keyboard-div .images #first img {
+        width: 100%;
+    }
+    .keyboard-div .images #first #orange-color {
+        border-radius: 13px;
+        width: 100%;
+    }
+    .keyboard-div .images #second {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        margin-left: 165px;
+        margin-right: 165px;
+        margin-top: 64px;
+    }
+
+    .hero-div {
+        justify-content: space-between;
+    }
+    .header button:hover {
+        background: #162542;
+        color: #fff;
+        transition-duration: 0.3s;
+    }
+    .hero-div .img-div img {
+        position: static;
+        border-radius: 13px;
+        width: 400px;
+    }
+    .hero-div #button-div button:hover {
+        background: #ff9b62;
+        transition-duration: 0.3s;
+    }
+    .keyboard-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .keyboard-div .images {
+        height: 400px;
+    }
+    .keyboard-div .images #first {
+        width: 200px;
+    }
+    .keyboard-div .images #second {
+        width: 400px;
+    }
+    .keyboard-div #text {
+        flex-direction: column;
+        width: 300px;
+        text-align: left;
+        margin-top: 0;
+        align-items: start;
+    }
+    .keyboard-div #text h2 {
+        text-align: left;
+    }
+    .keyboard-div #text p {
+        text-align: left;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .cards .card{
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+    }
+}
